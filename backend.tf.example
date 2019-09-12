@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "customer-tfstates"                # do not change, it's a static name of the bucket for all terrform states
-    key            = "project.tfstate"                  # path to the state file - change according to the project - customer/project.tfstate
-    region         = "us-east-1"                        # do not change
-    dynamodb_table = "customer-terraform-state-locking" # do not change
-    encrypt        = true                               # do not change
+    bucket         = "customer-tfstates"        # output of the command 'terraform output s3_bucket'
+    key            = "customer/project.tfstate" # path to the state file - change according to the project - customer/project.tfstate
+    region         = "us-east-1"
+    dynamodb_table = "customer-terraform-state-locking" # output of the command 'terraform output dynamodb_table_name'
+    encrypt        = true
   }
 }
