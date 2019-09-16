@@ -1,4 +1,4 @@
-**# Create S3 backend for your Terraform AWS project**
+# Create S3 backend for your Terraform AWS project
 
 Prerequisites:
 
