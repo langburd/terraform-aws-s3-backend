@@ -1,3 +1,5 @@
+
+# You can not use variables in this block, all values should be "hard-coded"
 terraform {
   backend "s3" {
     bucket         = "customer-tfstates"        # output of the command 'terraform output s3_bucket'

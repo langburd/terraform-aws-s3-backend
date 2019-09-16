@@ -11,10 +11,8 @@ Run ```terraform init```
 
 Run ```terraform apply```
 
-Rename ```backend.tf.example``` to ```backend.tf``` and edit if needed.
-
 The name of the bucket you can check with the command ```terraform output s3_bucket```
 
 Name of the DynamoDB table you can check with the command ```terraform output dynamodb_table_name```
 
-Add the file ```backend.tf``` to your project. 
+Add the file ```example\backend.tf``` to your project and edit if needed. 
