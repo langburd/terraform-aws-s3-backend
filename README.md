@@ -5,7 +5,7 @@ Prerequisites:
 - AWS CLI is installed. See [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
 - AWS CLI is configured. Run ```aws configure --profile <customer-name>```
 
-Change ```variables.tf``` and if needed ```provider.tf``` with your info.
+Change ```variables.tf``` with your info.
 
 Run ```terraform init```
 
