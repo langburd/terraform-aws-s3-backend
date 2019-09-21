@@ -5,7 +5,8 @@ provider "aws" {
 }
 
 terraform {
+  required_version = ">= 0.12.0"
   backend "local" {
-    path = "${var.customer}.tfstate"
+    path = "terraform.tfstate"
   }
 }
