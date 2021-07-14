@@ -1,18 +1,32 @@
 # Create S3 backend for your Terraform AWS project
 
-Prerequisites:
+## Prerequisites
 
 - AWS CLI is installed. See [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
-- AWS CLI is configured. Run ```aws configure --profile <customer-name>```
+- AWS CLI is configured. Run:
 
-Change ```variables.tf``` with your info.
+```bash
+aws configure --profile <customer-name>
+```
 
-Run ```terraform init```
+## Create configuration
 
-Run ```terraform apply```
+Change `variables.tf` with your info.
 
-The name of the bucket you can check with the command ```terraform output s3_bucket```
+Run `terraform init`
 
-Name of the DynamoDB table you can check with the command ```terraform output dynamodb_table_name```
+Run `terraform apply`
 
-Add the file ```example\backend.tf``` to your project and edit if needed. 
+The name of the bucket you can check with the command `terraform output s3_bucket`
+
+Name of the DynamoDB table you can check with the command `terraform output dynamodb_table_name`
+
+Add the file `example\backend.tf` to your project and edit as needed.
+
+## Repository of the project
+
+[terraform-azure-blob-storage-backend](https://github.com/langburd/terraform-aws-s3-backend)
+
+## Authors
+
+- [@langburd](https://www.github.com/langburd)
