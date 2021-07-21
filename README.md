@@ -7,6 +7,7 @@
 
 ```bash
 aws configure --profile <customer-name>
+export AWS_PROFILE=<customer-name>
 ```
 
 ## Create configuration
