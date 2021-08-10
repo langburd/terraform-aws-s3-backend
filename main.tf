@@ -11,7 +11,6 @@ resource "aws_kms_key" "terraform_kms_key" {
 # Create S3 bucket
 resource "aws_s3_bucket" "terraform_state_s3_bucket" {
   bucket = "${lower(var.customer)}-tfstates"
-  region = var.region
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
